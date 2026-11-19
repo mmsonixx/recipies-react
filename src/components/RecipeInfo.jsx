@@ -1,7 +1,8 @@
 import PropTypes from "prop-types";
+import * as Icons from "react-icons/fa";
 export const RecipeInfo = ({ resipe }) => (
   <li>
-    <h2>{resipe.title}</h2>
+    <h2>{resipe.title} <Icons.FaBacteria /></h2>
     <p>Час готування: {resipe.cookingTime} хвилин</p>
     <p>Складність {resipe.difficulty}</p>
     <img src={resipe.image} alt={resipe.title} />
